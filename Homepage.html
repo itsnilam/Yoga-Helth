@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="keywords" content="yoga,fitness,extersise,meditation,gym,dight,food,health">
+    <title>Document</title>
+    <link rel="icon" type="image" href="istockphoto1.jpg">
+   <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body >
+ 
+
+    <header >
+    <nav id="navbar" align="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><select class="dropdown"><option selected disabled class="dropdown-content"><a href="#"> Yoga </a>
+            <option><a href="#">Hatha Yoga</a></option>
+            <option><a href="#"></a></option>
+            <option><a href="#"></a></option>
+            <option><a href="#"></a></option>
+
+        </option></select></li>
+            <li><a href="#">Dight</a></li>
+            <li><a href="#"> Weight loss</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Exersise equipment</a></li>
+            <input type="text" name="search" placeholder="search for" id="search1" autofocus>
+        </ul>
+    
+    </nav>
+</header>
+
+<div class="container" >
+    
+    <div class="toggle-container" align="left">
+      <button id="login-btn" class="toggle-btn">Login</button>
+      <button id="register-btn" class="toggle-btn">Register</button>
+    </div>
+    <form id="login-form"><h2 id="h1">Login  </h2>
+        
+      <input type="text" name="username" placeholder="Username" required><br><br>
+      <input type="password" name="password" placeholder="Password" required><br><br>
+      <button type="submit" id ="login">Login</button>
+    </form>
+    <form id="register-form">
+        <h2 id="h2">Register  </h2>
+      <input type="text" name="newUsername" placeholder="New Username" required><br><br>
+      <input type="email" name="email" placeholder="email" required><br><br>
+      <input type="password" name="newPassword" placeholder="New Password" required><br><br>
+      <input type="text" name="phn" placeholder="Phone number" maxlength="10" pattern="[6-9]{1}[0-9]{10}"></br><br>
+
+      <button type="submit" id ="Register">Register</button>
+    </form>
+  </div>
+
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const loginBtn = document.getElementById('login-btn');
+    const registerBtn = document.getElementById('register-btn');
+  
+    loginBtn.addEventListener('click', () => {
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+    });
+  
+    registerBtn.addEventListener('click', () => {
+      loginForm.style.display = 'none';
+      registerForm.style.display = 'block';
+
+    });
+  </script>
+
+
+
+
+    
+</body>
+</html>
